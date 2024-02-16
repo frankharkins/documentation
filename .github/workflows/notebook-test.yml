@@ -86,12 +86,10 @@ jobs:
         shell: python
         run: |
           import subprocess
-          subprocess.run([
-              "echo",
-              "c.InlineBackend.figure_format = 'svg'",
-              ">>",
-              "~/.ipython/profile_default/ipython_kernel_config.py"
-          ])
+          subprocess.run(
+            "echo \"c.InlineBackend.figure_format = 'svg'\" >> ~/.ipython/profile_default/ipython_kernel_config.py",
+            shell=False
+          )
           files = """${{ steps.all-changed-files.outputs.all_changed_files }}"""
           args = ["tox", "--"] + files.split("\n") + ["--write"]
           subprocess.run(args, check=True)
