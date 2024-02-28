@@ -16,7 +16,7 @@ jobs:
   lint:
     name: Lint
     runs-on: ubuntu-latest
-    if: github.repository_owner == 'Qiskit'
+    # if: github.repository_owner == 'Qiskit'
     steps:
       - uses: actions/checkout@v4
       - name: Set up Node.js
