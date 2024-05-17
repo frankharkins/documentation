@@ -392,12 +392,11 @@ export async function htmlSignatureToMd(
     return "";
   }
 
-  const html = `<code>${signatureHtml}</code>`;
   const file = await unified()
     .use(rehypeParse)
     .use(rehypeRemark)
     .use(remarkStringify)
-    .process(html);
+    .process(signatureHtml);
 
   return String(file)
     .replaceAll("\n", "")
