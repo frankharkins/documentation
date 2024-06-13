@@ -64,7 +64,7 @@ jobs:
               repo: context.repo.repo,
               title: "Update notebook outputs",
               body: message,
-              head: `actions/cron-${ github.run_id }`,
+              head: `actions/cron-${{ github.run_id }}`,
               base: "main",
               assignees: []
             })
