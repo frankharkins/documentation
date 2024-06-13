@@ -47,7 +47,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git switch -c actions/cron-${{ github.run_id }}
           git commit -am "Re-run notebooks"
-          git push origin
+          git push origin actions/cron-${{ github.run_id }}
 
       - name: Make pull request
         if: "!cancelled()"
