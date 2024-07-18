@@ -4,10 +4,19 @@
   "description": "The documentation content home for https://docs.quantum.ibm.com.",
   "author": "Qiskit Development Team",
   "license": "Apache-2.0",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    "./lib/*": "./dist/lib/*.js",
+    "./commands/*": "./dist/commands/*.js"
+  },
   "scripts": {
+    "prepare": "tsc",
     "fmt": "prettier --write .",
     "test": "jest",
-    "typecheck": "tsc",
+    "typecheck": "tsc --noEmit",
     "check": "npm run check:qiskit-bot && npm run check:patterns-index && npm run check:metadata && npm run check:spelling && npm run check:internal-links && npm run check:orphan-pages && npm run check:fmt",
     "check:metadata": "node -r esbuild-register scripts/js/commands/checkMetadata.ts",
     "check:spelling": "cspell --relative --no-progress docs/**/*.md* docs/api/**/*.md* --config cspell/cSpell.json",
