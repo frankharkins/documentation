@@ -12,7 +12,7 @@
 
 import { describe, test, expect } from "@jest/globals";
 
-import { sphinxHtmlToMarkdown } from "./htmlToMd";
+import { sphinxHtmlToMarkdown } from "./htmlToMd.js";
 
 const DEFAULT_ARGS = {
   imageDestination: "/images/qiskit",

@@ -11,8 +11,9 @@
 // that they have been altered from the originals.
 
 import { describe, expect, test } from "@jest/globals";
-import { ObjectsInv, ObjectsInvEntry } from "./objectsInv";
 import { unlink, stat } from "fs/promises";
+
+import { ObjectsInv, ObjectsInvEntry } from "./objectsInv.js";
 
 const TEST_FOLDER = "scripts/js/lib/api/testdata/";
 const TEMP_FOLDER = "scripts/js/lib/api/testdata/temp/";

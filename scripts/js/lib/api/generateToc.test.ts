@@ -12,9 +12,9 @@
 
 import { describe, expect, test } from "@jest/globals";
 
-import { generateToc } from "./generateToc";
-import { Pkg, ReleaseNotesConfig } from "./Pkg";
-import type { TocGroupingEntry } from "./TocGrouping";
+import { generateToc } from "./generateToc.js";
+import { Pkg, ReleaseNotesConfig } from "./Pkg.js";
+import type { TocGroupingEntry } from "./TocGrouping.js";
 
 const DEFAULT_ARGS = {
   markdown: "",

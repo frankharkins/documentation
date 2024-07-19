@@ -12,8 +12,8 @@
 
 import { describe, expect, test } from "@jest/globals";
 
-import { mergeClassMembers } from "./mergeClassMembers";
-import { HtmlToMdResultWithUrl } from "./HtmlToMdResult";
+import { mergeClassMembers } from "./mergeClassMembers.js";
+import { HtmlToMdResultWithUrl } from "./HtmlToMdResult.js";
 
 describe("mergeClassMembers", () => {
   test("merge class members", async () => {

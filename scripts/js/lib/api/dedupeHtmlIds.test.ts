@@ -12,7 +12,7 @@
 
 import { expect, test } from "@jest/globals";
 
-import { dedupeHtmlIds } from "./dedupeHtmlIds";
+import { dedupeHtmlIds } from "./dedupeHtmlIds.js";
 
 test("dedupeHtmlIds()", async () => {
   expect(

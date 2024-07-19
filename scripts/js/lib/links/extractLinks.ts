@@ -20,10 +20,11 @@ import { Root } from "remark-mdx";
 import rehypeRemark from "rehype-remark";
 import rehypeParse from "rehype-parse";
 import remarkGfm from "remark-gfm";
-import { ObjectsInv } from "../api/objectsInv";
-import { readMarkdown } from "../markdownReader";
-import { removePrefix, removeSuffix } from "../stringUtils";
-import { getRoot } from "../fs";
+
+import { ObjectsInv } from "../api/objectsInv.js";
+import { readMarkdown } from "../markdownReader.js";
+import { removePrefix, removeSuffix } from "../stringUtils.js";
+import { getRoot } from "../fs.js";
 
 export type ParsedFile = {
   /** Anchors that the file defines. These can be linked to from other files. */

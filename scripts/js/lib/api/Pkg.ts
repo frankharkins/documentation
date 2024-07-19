@@ -12,10 +12,10 @@
 
 import { join } from "path/posix";
 
-import { findSeparateReleaseNotesVersions } from "./releaseNotes";
-import { getRoot } from "../fs";
-import { determineHistoricalQiskitGithubUrl } from "../qiskitMetapackage";
-import { TocGrouping, QISKIT_TOC_GROUPING } from "./TocGrouping";
+import { findSeparateReleaseNotesVersions } from "./releaseNotes.js";
+import { getRoot } from "../fs.js";
+import { determineHistoricalQiskitGithubUrl } from "../qiskitMetapackage.js";
+import { TocGrouping, QISKIT_TOC_GROUPING } from "./TocGrouping.js";
 
 export class ReleaseNotesConfig {
   readonly enabled: boolean;

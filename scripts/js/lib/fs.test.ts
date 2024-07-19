@@ -12,7 +12,7 @@
 
 import { expect, test } from "@jest/globals";
 
-import { getRoot, pathExists } from "./fs";
+import { getRoot, pathExists } from "./fs.js";
 
 test("pathExists() with getRoot()", async () => {
   const readme = await pathExists(`${getRoot()}/README.md`);

@@ -13,8 +13,8 @@
 import { describe, expect, test } from "@jest/globals";
 import { ObjectsInv } from "./objectsInv";
 
-import { updateLinks, normalizeUrl, relativizeLink } from "./updateLinks";
-import { HtmlToMdResultWithUrl } from "./HtmlToMdResult";
+import { updateLinks, normalizeUrl, relativizeLink } from "./updateLinks.js";
+import { HtmlToMdResultWithUrl } from "./HtmlToMdResult.js";
 
 describe("updateLinks", () => {
   test("update links", async () => {

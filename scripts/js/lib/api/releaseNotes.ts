@@ -16,9 +16,9 @@ import { readFile, writeFile, readdir } from "fs/promises";
 import { $ } from "zx";
 import transformLinks from "transform-markdown-links";
 
-import { getRoot, pathExists } from "../fs";
-import type { Pkg } from "./Pkg";
-import type { HtmlToMdResultWithUrl } from "./HtmlToMdResult";
+import { getRoot, pathExists } from "../fs.js";
+import type { Pkg } from "./Pkg.js";
+import type { HtmlToMdResultWithUrl } from "./HtmlToMdResult.js";
 
 // ---------------------------------------------------------------------------
 // Generic release notes handling

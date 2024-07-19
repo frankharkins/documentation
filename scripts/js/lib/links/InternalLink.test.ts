@@ -11,7 +11,8 @@
 // that they have been altered from the originals.
 
 import { describe, expect, test } from "@jest/globals";
-import { File, InternalLink } from "./InternalLink";
+
+import { File, InternalLink } from "./InternalLink.js";
 
 describe("Test the constructor of InternalLink", () => {
   test("without anchors", () => {

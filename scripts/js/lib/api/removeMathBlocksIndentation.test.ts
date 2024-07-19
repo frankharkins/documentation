@@ -12,7 +12,7 @@
 
 import { expect, test } from "@jest/globals";
 
-import removeMathBlocksIndentation from "./removeMathBlocksIndentation";
+import removeMathBlocksIndentation from "./removeMathBlocksIndentation.js";
 
 test("removeMathBlocksIndentation()", async () => {
   const results = [
